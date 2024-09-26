@@ -1,1 +1,1 @@
-type Length<T> = any
+type Length<T extends { length: number }> = T['length']
